@@ -1,0 +1,38 @@
+{
+  "name": "webhelper",
+  "version": "1.0.0",
+  "description": "前端开发小助手",
+  "main": "index.html#/home",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "leon <leonooo@163.com>",
+  "license": "MIT",
+  "window": {
+    "title": "前端开发小助手",
+    "frame": false,
+    "toolbar": false,
+    "fullscreen": false,
+    "show": true,
+    "resizable": false,
+    "width": 902,
+    "max_width": 902,
+    "height": 600,
+    "max_height": 600,
+    "icon": "statics/img/icon.png"
+  },
+  "devDependencies": {
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-react": "^3.0.1",
+    "gulp-uglify": "^1.4.1",
+    "gulp-util": "^3.0.6",
+    "gulp-zip": "^3.0.2",
+    "react": "^0.13.3",
+    "react-router": "^1.0.0-rc1",
+    "webpack": "^1.12.2"
+  },
+  "dependencies": {
+    "content-type-mime": "^1.0.1"
+  }
+}

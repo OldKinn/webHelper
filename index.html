@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>React</title>
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="statics/libs/amazeui/css/amazeui.min.css"/>
+    <link rel="stylesheet" href="statics/libs/gridster/jquery.gridster.min.css"/>
+    <link rel="stylesheet" href="statics/css/app.css"/>
+</head>
+<body>
+<header class="am-topbar">
+    <div>
+        <div class="app-title-drag">
+            <img draggable="false" src="statics/img/icon.png">
+        </div>
+        <div class="app-title-buttons">
+            <button class="am-btn am-btn-default am-btn-xs" onclick="refresh()">
+                <i class="am-icon-refresh"></i>
+            </button>
+            <button class="am-btn am-btn-default am-btn-xs" onclick="showDebug()">
+                <i class="am-icon-bars"></i>
+            </button>
+            <button class="am-btn am-btn-default am-btn-xs" onclick="miniWindow()">
+                <i class="am-icon-minus"></i>
+            </button>
+            <button class="am-btn am-btn-default am-btn-xs" onclick="closeWindow()">
+                &nbsp;<i class="am-icon-times"></i>&nbsp;
+            </button>
+        </div>
+    </div>
+    <div class="am-collapse am-topbar-collapse" id="menuContainer" style="margin-left: 60px;">
+        <ul class="am-nav am-nav-pills am-topbar-nav">
+            <li id="menu_home"><a draggable="false" href="#/home">首页</a></li>
+            <li id="menu_code"><a draggable="false" href="#/uricode">URI编码</a></li>
+            <li id="menu_base64"><a draggable="false" href="#/base64">BASE64编码</a></li>
+            <li id="menu_http"><a draggable="false" href="#/http">HTTP请求</a></li>
+            <li id="menu_json"><a draggable="false" href="#/http">JSON格式化</a></li>
+            <li id="menu_markdown"><a draggable="false" href="#/http">MarkDown</a></li>
+            <li id="menu_mind"><a draggable="false" href="#/http">思维导图</a></li>
+        </ul>
+        <div class="am-topbar-right">
+            <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">
+                <i class="am-icon-cogs"></i> 设置
+            </button>
+        </div>
+    </div>
+</header>
+<div class="main-container" id="main"></div>
+
+<script type="text/javascript" src="apps/server.js"></script>
+<script type="text/javascript" src="apps/app.js"></script>
+</body>
+</html>

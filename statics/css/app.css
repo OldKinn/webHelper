@@ -1,0 +1,134 @@
+html {
+    border: 1px solid #D4955F;
+    width: 902px;
+    height: 600px;
+}
+
+body {
+    background-color: #EFEFEF;
+    font-size: 14px;
+    overflow: hidden;
+    -webkit-user-select:none;
+    user-select:none;
+}
+
+.app-title-drag {
+    height: 30px;
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+
+.app-title-drag img {
+    width: 48px;
+    height: 48px;
+    margin: 5px 0 0 5px;
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+
+.app-title-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-app-region: no-drag;
+}
+
+.app-title-buttons button {
+    background-color: #f8f8f8;
+    border: none !important;
+}
+
+.app-title-buttons button:focus {
+    outline: none !important;
+}
+
+.app-title-buttons button:last-child:hover {
+    background-color: #E81123 !important;
+    color: #FFFFFF;
+}
+
+.app-page {
+    position: absolute;
+    width: 900px;
+    height: 517px;
+    overflow: auto;
+    background-color: #EFEFEF;
+}
+
+/*滚动条整体*/
+::-webkit-scrollbar {
+    width: 10px; /*竖向滚动条宽度*/
+    height: 10px; /*横向滚动条高度*/
+}
+
+/*滚动条按钮*/
+::-webkit-scrollbar-button {
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F3F3F3; /*滑道全部*/
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #F3F3F3; /*滑道*/
+    -webkit-border-radius: 4px; /*滑道圆角宽度*/
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FFFFFF; /*滑动条表面*/
+    border: solid 1px #C0C0C0; /*滑动条边框*/
+    border-radius: 4px; /*滑动条圆角宽度*/
+}
+
+/*横竖滚动条交角*/
+::-webkit-scrollbar-corner {
+    background-color: #F3F3F3;
+}
+
+/*横竖滚动条交角图案*/
+::-webkit-resizer {
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+/*鼠标滑过滑动条*/
+::-webkit-scrollbar-thumb:hover {
+    background-color: #F3F3E0;
+}
+
+.am-list, .am-topbar {
+    margin-bottom: 0;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gridster ul, ol {
+    list-style: none;
+}
+
+.gridster li {
+    background-color: #FFF;
+    border: 1px solid #333;
+}
+
+.router-enter {
+    left: 900px;
+    transition: left .4s ease;
+}
+
+.router-enter.router-enter-active {
+    left: 1px;
+}
+
+.router-leave {
+    left: 0;
+    transition: left .4s ease;
+}
+
+.router-leave.router-leave-active {
+    left: -900px;
+}
